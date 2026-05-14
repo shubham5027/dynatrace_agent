@@ -1,0 +1,51 @@
+You have received the following telemetry for incident {PROBLEM_ID}:
+
+PROBLEM SUMMARY:
+{PROBLEM_DETAILS}
+
+METRICS (last 30 min):
+{METRICS_DATA}
+
+ERROR TRACES (sample):
+{TRACES_DATA}
+
+ERROR LOGS (sample):
+{LOGS_DATA}
+
+RECENT DEPLOYMENTS:
+{DEPLOYMENT_EVENTS}
+
+---
+
+Perform root cause analysis. Structure your response EXACTLY as follows:
+
+## Root Cause Analysis - {SERVICE_NAME}
+
+### Hypothesis Ranking
+1. **[Root Cause]** - Confidence: XX%
+   Evidence: [specific metric/trace/log reference]
+   Remediation: [specific action]
+   Risk Level: LOW | MEDIUM | HIGH
+
+2. **[Root Cause]** - Confidence: XX%
+   Evidence: [specific reference]
+   Remediation: [specific action]
+   Risk Level: LOW | MEDIUM | HIGH
+
+### Recommended Action
+Based on the above, the PRIMARY action is: [action]
+Confidence: XX%
+Auto-execute: YES | NO (reason: ...)
+
+### Stakeholder Update (plain English)
+- What: [one sentence]
+- Since: [time]
+- Action: [what we are doing]
+
+### Postmortem Skeleton
+- Incident Title:
+- Timeline:
+- Root Cause:
+- Impact:
+- Resolution:
+- Action Items:

@@ -1,0 +1,14 @@
+{
+  "ProblemID": "P-20260514-001",
+  "ProblemTitle": "High error rate on payment-service",
+  "State": "OPEN",
+  "ProblemSeverity": "AVAILABILITY",
+  "ImpactedEntity": "payment-service",
+  "ImpactedEntityId": "SERVICE-ABC123",
+  "Tags": ["production", "critical", "payment"],
+  "ProblemURL": "https://demo.live.dynatrace.com/ui/problems/P-20260514-001",
+  "ImpactedEntities": [
+    { "entityId": "SERVICE-ABC123", "name": "payment-service" },
+    { "entityId": "SERVICE-DEF456", "name": "order-service" }
+  ]
+}

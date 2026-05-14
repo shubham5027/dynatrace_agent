@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["python", "-m", "agent.webhook_trigger"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "agent.webhook_trigger:app"]

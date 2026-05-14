@@ -15,7 +15,7 @@ import requests as http_requests
 
 app = Flask(__name__)
 
-AGENT_ID = os.environ["AGENT_BUILDER_ID"]
+AGENT_ID = os.environ.get("AGENT_BUILDER_ID", "temp-agent-id")
 PROJECT_ID = os.environ["GOOGLE_CLOUD_PROJECT"]
 LOCATION = os.environ.get("GOOGLE_CLOUD_LOCATION", "us-central1")
 

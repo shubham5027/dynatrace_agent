@@ -48,6 +48,21 @@ def get_bearer_token() -> str:
 def healthz():
     return jsonify({"status": "healthy"}), 200
 
+@app.route("/", methods=["GET", "POST"])
+def root():
+    return jsonify({
+        "status": "ok",
+        "message": "Dynatrace MCP server is running",
+        "tools": [
+            "get_active_problems",
+            "get_problem_details",
+            "get_service_metrics",
+            "get_distributed_traces",
+            "get_logs",
+            "get_deployment_events"
+        ]
+    }), 200
+
 
 # -----------------------------------
 # Dynatrace Tool APIs
